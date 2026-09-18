@@ -33,12 +33,12 @@ public class StudentSystem {
         for(int i = 0; i < grades.length; i++) {
             sum+=grades[i];
         }
-        double sum1=(double)sum/students.length;
+        double sum1=(double)sum/grades.length;
         System.out.println(sum1);
     }
 
     public void highestGrade(){
-        int highest=0;
+        int highest=grades[0];
         for(int i = 0; i < grades.length; i++) {
             if(grades[i]>highest){
                 highest=grades[i];
@@ -48,13 +48,13 @@ public class StudentSystem {
     }
 
     public void lowestGrade(){
-        int lowest=0;
+        int lowest=grades[0];
         for(int i = 0; i < grades.length; i++) {
             if(grades[i]<lowest){
                 lowest=grades[i];
             }
         }
-        System.out.println("Highest grade: " + lowest);
+        System.out.println("Lowest grade: " + lowest);
     }
 
 
